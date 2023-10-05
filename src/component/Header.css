@@ -1,0 +1,18 @@
+.headerTop {
+  display: flex;
+justify-content: space-evenly;
+  margin-inline: 30px;
+  margin-block: 30px;
+}
+
+
+.headerInput {
+  border-radius: 12px;
+  width: 820px;
+  text-align: center;
+  border:1px solid gray;
+}
+
+.Headerimg {
+  width: 152px;
+}
