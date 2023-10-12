@@ -7,16 +7,7 @@ export default function Container() {
             
                 <h1>Deneme:</h1>
                
-                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id quia excepturi dolorum dolore modi illum quas possimus et eveniet.</span>
-
-                 <ul>
-                    <li>asdassd</li>
-                    <li>asdassd</li>
-                    <li>asdassd</li>
-                    <li>asdassd</li>
-                    <li>asdassd</li>
-
-                 </ul>
+                 
             </div>
         </>
     )
