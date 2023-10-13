@@ -76,7 +76,7 @@ a {
   display: flex;
   justify-content: center ;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   width: 1440px;
 }
 
@@ -91,8 +91,10 @@ a {
   width: 200px;
   position: absolute;
   right: 30px;
-  right: 172px;
-  top: 85px;
+  right: 196px;
+  top: 80px;
+  background-color: white;
+  left: 1250px;
 }
 
 .sepet {
@@ -109,10 +111,7 @@ a {
   top: 10px;
 }
 
-.form-mycount {
-  background-color: white;
 
-}
 .form-mycount button {
   padding: 10px 13px;
   margin: 2px;
@@ -140,5 +139,5 @@ a {
   color: white;
   border: none;
   border-radius: 6px;
-  background-color: rgb(64, 231, 64);
+  background-color: rgb(243 75 144);
 }
