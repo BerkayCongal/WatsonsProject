@@ -16,10 +16,23 @@ function handleClickCount() {
     return (
         <>
             <div className="headerTop">
-           <Link  to={"/"}><img className="Headerimg" src="/src/component/img/320px-Watsons_logotype.svg.png"alt=""/></Link>
-            <input className="headerInput" type="text" name="text" placeholder="Arama Yap" />
-            <div className="userheader"><img src="/src/component/img/user-circle-regular-24.png" alt="" />Merhaba Hesabım <img onClick={handleClickCount} className="arrow" src="/src/component/img/arrow.png" alt="" /></div>
-            <img className="basket-header" src="/src/component/img/basketnew.png" alt=""/>
+                <Link  to={"/"}><img className="Headerimg" src="/src/component/img/320px-Watsons_logotype.svg.png"alt=""/></Link>
+                <input className="headerInput" type="text" name="text" placeholder="Arama Yap" />
+                <div className="userheader">
+                    <img src="/src/component/img/user-circle-regular-24.png" alt="" />
+                    <p style={{width:"40px",marginRight:"10px"}}>Merhaba Hesabım</p>
+                    <img onClick={handleClickCount} className="arrow" src="/src/component/img/arrow.png" alt="" />
+                    <img className="basket-header" src="/src/component/img/basketnew.png" alt=""/>
+                    <div className={mycount ? "mycount active": "sepet"}>
+                        <form className="form-mycount" action="">
+                            <button className="login-header">Oturumu Aç</button>
+                            <button className="count-header">Hesabım</button>
+                            <button className="myorders-header">Siparişlerim</button>
+                            <button className="signup-header">Kayıt</button>
+                        </form>
+                    </div>
+                    
+                </div>
             </div>
             
             <div className=" container">
@@ -38,14 +51,6 @@ function handleClickCount() {
                         <a  className="link" href="#">Sürdürülebilir Yaşam</a>
                     </div>
                 </div>
-            </div>
-            <div className={mycount ? "mycount active": "sepet"}>
-            <form className="form-mycount" action="">
-                <button className="login-header">Oturumu Aç</button>
-                <button className="count-header">Hesabım</button>
-                <button className="myorders-header">Siparişlerim</button>
-                <button className="signup-header">Kayıt</button>
-            </form>
             </div>
             <Outlet/>
         </>
