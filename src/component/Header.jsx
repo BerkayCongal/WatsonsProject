@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 
 
@@ -20,9 +21,9 @@ function handleClickCount() {
                 <input className="headerInput" type="text" name="text" placeholder="Arama Yap" />
                 <div className="userheader">
                     <img src="/src/component/img/user-circle-regular-24.png" alt="" />
-                    <p style={{width:"40px",marginRight:"10px"}}>Merhaba Hesabım</p>
+                    <p style={{width:"40px",marginRight:"25px"}}>Merhaba Hesabım</p>
                     <img onClick={handleClickCount} className="arrow" src="/src/component/img/arrow.png" alt="" />
-                    <img className="basket-header" src="/src/component/img/basketnew.png" alt=""/>
+                     <Link to={"/basket"}><img className="basket-header" src="/src/component/img/basketnew.png" alt=""/></Link>
                     <div className={mycount ? "mycount active": "sepet"}>
                         <form className="form-mycount" action="">
                             <button className="login-header">Oturumu Aç</button>
@@ -53,6 +54,7 @@ function handleClickCount() {
                 </div>
             </div>
             <Outlet/>
+            <Footer/>
         </>
     )
 

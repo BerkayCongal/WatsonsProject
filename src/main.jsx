@@ -4,6 +4,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import CreateHeader from './component/Header.jsx'
 import About from './component/About/About'
 import Container from './component/Container/Container.jsx'
+import Basket from './component/Basket/Basket.jsx'
+import 'primereact/resources/themes/lara-light-indigo/theme.css'; // theme
+
 
 
 const router = createBrowserRouter(
@@ -18,11 +21,17 @@ const router = createBrowserRouter(
         {
           path:"/about",
           element: <About/>
+        },
+        {
+          path:"/basket",
+          element:<Basket/>
         }
       ]
     }
   ]
 )
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <RouterProvider router={router}/>

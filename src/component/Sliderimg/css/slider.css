@@ -27,3 +27,15 @@
    min-width: 1440px;
    transition: transform 0.5s ease-in-out;
 }
+
+
+.span {
+    background-color:white;
+    border-radius: 12px;
+}
+
+.slider-container span {
+    background-color: #009AA9;
+    border-radius: 12px;
+    color: white;
+}

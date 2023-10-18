@@ -1,4 +1,7 @@
+import Footer from "../Footer/Footer"
+import MinSlider from "../MinSlider/MinSlider"
 import SliderCont from "../Sliderimg/Slider"
+
 import "./container.css"
 
 
@@ -19,10 +22,9 @@ export default function Container() {
                 <div className="headerlog">
                     <img src="/src/component/Container/img/Pure-beuaty-.png" alt="" />
                 </div>
-                <div>
-                        <SliderCont/>
-                </div>
-            
+                
+                <SliderCont/>
+                <MinSlider/>
             </div>
         </>
     )
