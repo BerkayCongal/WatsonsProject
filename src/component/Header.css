@@ -30,7 +30,10 @@
   width: 33px;
   cursor: pointer;
   height: 33px;
-  /* margin-left: 50px; */
+}
+
+.basket-header:hover {
+  transform: scale(1.1);
 }
 
 .userheader {
@@ -52,9 +55,10 @@
   cursor: pointer;
 }
 
-/* .arrow:hover {
-  padding-inline: 5px;
-} */
+
+.arrow:hover {
+  transform: scale(1.1);
+}
 a {
   text-decoration: none;
   color: white;
@@ -86,6 +90,11 @@ a {
 .filter-top link {
   padding-inline: 5px;
 }
+
+a:hover {
+  transform: scale(1.1);
+}
+/* DENEME--------------- */
 
 .form-mycount {
   display: flex;
@@ -154,4 +163,5 @@ a {
   color: white;
   background-color: #009AA9;
   width: 100%;
+  height: 60px;
 }

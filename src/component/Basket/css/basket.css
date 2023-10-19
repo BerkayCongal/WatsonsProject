@@ -9,5 +9,73 @@
 .card {
     margin: auto;
     width: 600px;
-    margin-block: 32px;
+    margin-block: 50px;
+}
+
+
+
+
+.control-nav {
+    display: flex;
+    justify-content: center;
+    padding-inline: 50px;
+    margin-block: 30px;
+    justify-content: space-between;
+}
+
+
+
+.control-nav p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.all-price {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.basketprice {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.pricebutton {
+    width: 100%;
+}
+
+.card-price {
+    border: 1px solid black;
+  box-shadow: rgba(151, 151, 151, 0.15) 0px 1px 5px;
+  border: none;
+  height: 143px;
+}
+  
+  
+
+.card-container {
+    padding: 24px 28px;
+    border: none;
+    width: 450px;
+}
+
+.pricebutton {
+    background-color: #009AA9;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 16px;
+}
+
+
+.container-link {
+    width: 500px;
+    height: 500px;
+    text-align: center;
 }
