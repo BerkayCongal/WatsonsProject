@@ -39,7 +39,7 @@ export default function Basket () {
                     loop
                     ref={nameRef}
                     src={Cargo}
-                    style={{ height: '50px', width: '50px' }}
+                    style={{ height: '100px', width: '100px' }}
                     >selam
             </Player>Alışverişime Geri Dön
             </p></Link>

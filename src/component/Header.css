@@ -156,12 +156,73 @@ a:hover {
   background-color: rgb(243 75 144);
 }
 
+/* ----------------------Footer-------------------------------- */
 
-.span2 {
-  align-items: center;
-  text-align: center;
+
+
+.footer-nav {
   color: white;
   background-color: #009AA9;
   width: 100%;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 50px;
+}
+
+
+.footerimg {
+  height: 36px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+
+.footer-contanier {
+  width: 1420px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.footer-contanier li {
+  list-style: none;
+  font-size: 14px;
+  color: #c2c2c2;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
+
+.footer-son {
+  width: 100%;
+  height: 50px;
+  background-color: #009AA9;
+  color: white;
+ text-align: center;
+}
+
+/* ----Srcol Barrrr-------------- */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #009AA9; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02c6d8; 
 }
