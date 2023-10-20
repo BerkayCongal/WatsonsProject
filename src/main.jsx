@@ -5,7 +5,9 @@ import CreateHeader from './component/Header.jsx'
 import About from './component/About/About'
 import Container from './component/Container/Container.jsx'
 import Basket from './component/Basket/Basket.jsx'
-import 'primereact/resources/themes/lara-light-indigo/theme.css'; // theme
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import Signup from './component/SignUp/Signup.jsx'
+import Login from './component/Login/Login.jsx'
 
 
 
@@ -16,7 +18,7 @@ const router = createBrowserRouter(
       element:  <CreateHeader/>,
       children: [
         {
-          index: true, element: <Container/>
+          index: true, element: <Container/>,
         },
         {
           path:"/about",
@@ -25,6 +27,14 @@ const router = createBrowserRouter(
         {
           path:"/basket",
           element:<Basket/>
+        },
+        {
+          path:"/signup",
+          element:<Signup/>
+        },
+        {
+          path:"/login",
+          element:<Login/>
         }
       ]
     }
@@ -35,10 +45,5 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <RouterProvider router={router}/>
-
-
-
-
-
 
 )

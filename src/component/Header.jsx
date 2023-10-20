@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
+import Signup from "./SignUp/Signup";
 
 
 
@@ -26,10 +27,10 @@ function handleClickCount() {
                      <Link to={"/basket"}><img className="basket-header" src="/src/component/img/basketnew.png" alt=""/></Link>
                     <div className={mycount ? "mycount active": "sepet"}>
                         <form className="form-mycount" action="">
-                            <button className="login-header">Oturumu Aç</button>
+                            <Link to={"/login"}><button className="login-header">Oturumu Aç</button></Link> 
                             <button className="count-header">Hesabım</button>
                             <button className="myorders-header">Siparişlerim</button>
-                            <button className="signup-header">Kayıt</button>
+                            <Link to={"/signup"}><button className="signup-header">Kayıt</button></Link> 
                         </form>
                     </div>
                     

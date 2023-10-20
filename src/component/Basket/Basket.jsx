@@ -48,8 +48,6 @@ export default function Basket () {
             </div>
            </div>
             
-            
-            
             <div className='card-price'>
                 <div>
                     <div className='card-container'>

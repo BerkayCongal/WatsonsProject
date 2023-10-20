@@ -6,7 +6,6 @@
   margin-inline: 10px; 
 }
 
-
 .headerInput {
   border-radius: 5px;
   width: 820px;
@@ -14,7 +13,6 @@
   border:2px solid #009AA9;
   padding: 5px 14px;
   outline-color: #009AA9;
-
 }
 
 .Headerimg {
@@ -55,7 +53,6 @@
   cursor: pointer;
 }
 
-
 .arrow:hover {
   transform: scale(1.1);
 }
@@ -75,7 +72,6 @@ a {
  display: flex;
  justify-content: center;
  cursor: pointer;
- padding-block: 10px;
 }
 
 .filter-top {
@@ -87,13 +83,16 @@ a {
   width: 1440px;
 }
 
-.filter-top link {
-  padding-inline: 5px;
+.link:hover {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #02c6d8;
+  align-items: center;
+  text-align: center;
 }
 
-a:hover {
-  transform: scale(1.1);
-}
 /* DENEME--------------- */
 
 .form-mycount {
@@ -125,7 +124,6 @@ a:hover {
   top: 10px;
 }
 
-
 .form-mycount button {
   padding: 10px 13px;
   margin: 2px;
@@ -136,6 +134,7 @@ a:hover {
   color: white;
   border: none;
   border-radius: 6px;
+  width: 100%;
 }
 
 .count-header {
@@ -154,11 +153,14 @@ a:hover {
   border: none;
   border-radius: 6px;
   background-color: rgb(243 75 144);
+  width: 100%;
 }
 
+.signup-header:hover {
+ cursor: pointer;
+} 
+
 /* ----------------------Footer-------------------------------- */
-
-
 
 .footer-nav {
   color: white;
@@ -171,14 +173,12 @@ a:hover {
   margin-block: 50px;
 }
 
-
 .footerimg {
   height: 36px;
   display: flex;
   gap: 10px;
   cursor: pointer;
 }
-
 
 .footer-contanier {
   width: 1420px;
@@ -189,7 +189,6 @@ a:hover {
     justify-content: space-around;
 }
 
-
 .footer-contanier li {
   list-style: none;
   font-size: 14px;
@@ -197,7 +196,6 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 10px;
 }
-
 
 .footer-son {
   width: 100%;
@@ -207,7 +205,7 @@ a:hover {
  text-align: center;
 }
 
-/* ----Srcol Barrrr-------------- */
+/* ------------Srcol Barrrr-------------- */
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -217,7 +215,6 @@ a:hover {
   border-radius: 10px;
 }
  
-
 ::-webkit-scrollbar-thumb {
   background: #009AA9; 
   border-radius: 10px;
@@ -225,4 +222,115 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #02c6d8; 
+}
+
+/* -----------Login--------- */
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 100px;
+}
+
+.container-login h2 {
+  color: #009AA9;
+}
+
+.container-login p {
+  color: #c2c2c2;
+  margin-bottom: 50px;
+}
+
+.loginform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loginform input {
+  text-align: center;
+  width: 386px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid  #c2c2c2;
+}
+.loginform button {
+  background-color: #009AA9;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-sign {
+  width: 100%;
+}
+
+/* ------Advertising------- */
+
+.advertising {
+  width: 100%;
+  background-color: #009AA9;
+  color: white;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+/* ---------------Sign ----------*/
+
+.new-sign  h2{
+  color: #009AA9;
+
+}
+
+.new-sign p {
+  color: #c2c2c2;
+  margin-bottom: 30px;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 100px;
+}
+
+.sign-form input {
+  border: 1px solid gainsboro;
+  width: 500px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sign-form button {
+  width: 500px;
+  background-color: #009AA9;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-Favorite {
+  background-color: #009AA9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
