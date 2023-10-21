@@ -327,10 +327,23 @@ a {
   background-color: #009AA9;
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 30px;
   gap: 30px;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-bottom-left-radius: 84px;
+  border-bottom-right-radius: 500px;
+  border-top-right-radius: 177px;
+}
+
+
+.sign-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
