@@ -6,7 +6,6 @@ import  Favoir from"/src/Animations/Favoir.json"
 import New from "/src/Animations/New.json"
 import Car from "/src/Animations/Car.json"
 import { useRef } from "react";
-import Index from "../Try";
 
 
 export default function Signup () {
@@ -59,7 +58,6 @@ export default function Signup () {
                     </div> 
                 </div>
             </div>
-            <Index/>
             
         </>
     )

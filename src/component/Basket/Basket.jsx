@@ -14,7 +14,6 @@ export default function Basket () {
     const items = [
         {
             label: 'Ürün Paketleniyor',
-           
         },
         {
             label: 'Kargoya verildi'

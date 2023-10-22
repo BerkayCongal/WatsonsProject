@@ -8,7 +8,7 @@ import Basket from './component/Basket/Basket.jsx'
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import Signup from './component/SignUp/Signup.jsx'
 import Login from './component/Login/Login.jsx'
-import Index from './component/Try/index.jsx'
+import Filter from './component/Filter/Filter.jsx'
 
 const router = createBrowserRouter(
   [
@@ -36,9 +36,8 @@ const router = createBrowserRouter(
           element:<Login/>
         },
         {
-          path:"/index",
-          element:<Index/>
-
+          path:"/filter",
+          element: <Filter/>
         }
       ]
     }
