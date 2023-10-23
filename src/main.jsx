@@ -9,6 +9,8 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import Signup from './component/SignUp/Signup.jsx'
 import Login from './component/Login/Login.jsx'
 import Filter from './component/Filter/Filter.jsx'
+import Delivery from './component/delivery/delivery.jsx'
+import Account from './component/Myaccount/account.jsx'
 
 const router = createBrowserRouter(
   [
@@ -38,6 +40,14 @@ const router = createBrowserRouter(
         {
           path:"/filter",
           element: <Filter/>
+        },
+        {
+          path:"/delivery",
+          element:<Delivery/>
+        },
+        {
+          path:"/account",
+          element:<Account/>
         }
       ]
     }

@@ -95,7 +95,7 @@ a {
 }
 
 .filter-top a:hover {
-height: 100%;
+  height: 100%;
   background-color: white;
   color: #02c6d8;
   display: flex;
@@ -105,7 +105,16 @@ height: 100%;
   text-align: center;
 }
 
-/* .link:hover{
+.link:hover .dropdown {
+  display: block;
+  transition: all 100ms;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* .link:hover p {
   display: block;
   background-color: white;
   height: 100%;
@@ -160,6 +169,7 @@ height: 100%;
   border: none;
   background-color: white;
   border-bottom: 1px solid rgb(122, 122, 122);
+  width: 100%;
 }
 
 .myorders-header {
@@ -371,7 +381,8 @@ height: 100%;
 
 .contanier-filter {
   width: 300px;
-  height: 100%;
+  /* height: 100%; */
+  height: 450px;
   background-color: #009AA9;
   color: white;
 }
@@ -423,7 +434,6 @@ height: 100%;
     gap: 0% px;
     grid-auto-flow: row;
     gap: 30px;
-
 }
 
 .filter-cards {
@@ -443,3 +453,24 @@ height: 100%;
   text-align: center;
   border: 1px solid #02c6d8;
 }
+
+/* -------delivery----------- */
+
+.delivery {
+  width: 1200px;
+  margin: auto;
+
+}
+
+.delivery-container h2 {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-block: 30px;
+}
+
+.delivery-container h3{
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+

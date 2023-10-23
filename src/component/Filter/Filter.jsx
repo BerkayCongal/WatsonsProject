@@ -36,22 +36,6 @@ export default function Filter() {
                             <p>asdasdas</p>
                         </form>
                    </div>
-                   <span className="filter-handalClick">Sampuan <img onClick={HandalClick} className="filter-arrow" src="/src/component/img/arrow.png"></img></span>
-                   <div className={formFilter ? "formFilter active": "arrowBtn"}>
-                        <form className="form-filter" action="">
-                            <p>asdasdas</p>
-                            <p>asdasdas</p>
-                        </form>
-                   </div>
-                   <span className="filter-handalClick">Sampuan <img onClick={HandalClick} className="filter-arrow" src="/src/component/img/arrow.png"></img></span>
-                   <div className={formFilter ? "formFilter active": "arrowBtn"}>
-                        <form className="form-filter" action="">
-                            <p>asdasdas</p>
-                            <p>asdasdas</p>
-                        </form>
-                   </div>
-                   
-                   
                    </div>
                 </div>
                 <div className="filter-cards">

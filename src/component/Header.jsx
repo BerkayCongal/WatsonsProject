@@ -28,7 +28,7 @@ function handleClickCount() {
                     <div className={mycount ? "mycount active": "sepet"}>
                         <form className="form-mycount" action="">
                             <Link to={"/login"}><button className="login-header">Oturumu Aç</button></Link> 
-                            <button className="count-header">Hesabım</button>
+                            <Link to={"/account"}><button className="count-header">Hesabım</button></Link>
                             <button className="myorders-header">Siparişlerim</button>
                             <Link to={"/signup"}><button className="signup-header">Kayıt</button></Link> 
                         </form>
@@ -41,8 +41,10 @@ function handleClickCount() {
             <div className="header-filter">
                     <div className="filter-top">
                         <Link to={"/filter"}><span className="link" href="#">Sadece Watsons’ta</span></Link>
-                       <Link to={"/filter"}><a className="link" href="#">Sana Özel</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Makyaj</a></Link>
+                       <Link to={"/filter"}><a className="link" href="#">Sana Özel
+                       <p className="dropdown">a Deneme</p>
+                        </a></Link>
+                       <Link className="link" to={"/filter"}> Mak</Link>
                        <Link to={"/filter"}><a  className="link" href="#">Saç Bakım</a></Link>
                        <Link to={"/filter"}><a  className="link" href="#">Kişisel Bakım</a></Link>
                        <Link to={"/filter"}><a className="link" href="#">Sağlıklı Yaşam</a></Link>
@@ -50,7 +52,6 @@ function handleClickCount() {
                        <Link to={"/filter"}><a  className="link" href="#">Parfüm</a></Link>
                        <Link to={"/filter"}><a  className="link" href="#">Aksesuar K-Beauty</a></Link>
                        <Link to={"/filter"}><a  className="link" href="#">Sürdürülebilir Yaşam</a></Link>
-                        <p>a Deneme</p>
                         {/* Tekrara dön bak buraya arastır....! */}
                     </div>
                 </div>
