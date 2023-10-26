@@ -29,7 +29,7 @@ function handleClickCount() {
                         <form className="form-mycount" action="">
                             <Link to={"/login"}><button className="login-header">Oturumu Aç</button></Link> 
                             <Link to={"/account"}><button className="count-header">Hesabım</button></Link>
-                            <button className="myorders-header">Siparişlerim</button>
+                            <Link to={"/account"}> <button className="myorders-header">Siparişlerim</button></Link>
                             <Link to={"/signup"}><button className="signup-header">Kayıt</button></Link> 
                         </form>
                     </div>
@@ -40,18 +40,38 @@ function handleClickCount() {
             <div className=" container">
             <div className="header-filter">
                     <div className="filter-top">
-                        <Link to={"/filter"}><span className="link" href="#">Sadece Watsons’ta</span></Link>
+                        <Link className="link" to={"/filter"}>Sadece Watsons’ta 
+                        <p className="dropdown"><span> Sana özel  malzemeler</span></p></Link>
+
                        <Link to={"/filter"}><a className="link" href="#">Sana Özel
                        <p className="dropdown">a Deneme</p>
                         </a></Link>
-                       <Link className="link" to={"/filter"}> Mak</Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Saç Bakım</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Kişisel Bakım</a></Link>
-                       <Link to={"/filter"}><a className="link" href="#">Sağlıklı Yaşam</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Erkek Bakım</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Parfüm</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Aksesuar K-Beauty</a></Link>
-                       <Link to={"/filter"}><a  className="link" href="#">Sürdürülebilir Yaşam</a></Link>
+
+                       <Link className="link" to={"/filter"}> Makyaj
+                       <p className="dropdown">a Deneme</p>
+                       </Link>
+                       
+                       <Link className="link" to={"/filter"}> Saç Bakım
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}> Kişisel Bakım
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}> Sağlıklı Yaşam
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}> Erkek Bakım
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}> Parfüm
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}>Aksesuar K-Beauty 
+                       <p className="dropdown">a Deneme</p></Link>
+
+                       <Link className="link" to={"/filter"}>Sürdürülebilir Yaşam
+                       <p className="dropdown">a Deneme</p></Link>
+
                         {/* Tekrara dön bak buraya arastır....! */}
                     </div>
                 </div>

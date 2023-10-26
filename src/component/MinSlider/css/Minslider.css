@@ -6,15 +6,11 @@ border: 1px solid black;
   padding: 10px;
   margin-block: 32px;
   border-radius: 12px;
-
-  width: 400px;
+width: 338px
 }
-
 .min-img {
-    width: 195px;
-    height: 195px;
+    width: 200px;
 }
-
 .min-slider {
     display: flex;
     justify-content: center;

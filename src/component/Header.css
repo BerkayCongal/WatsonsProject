@@ -108,24 +108,21 @@ a {
 .link:hover .dropdown {
   display: block;
   transition: all 100ms;
+  width: 1440px;
+ display: flex;
+ justify-content: center;
+  position: absolute;
+  left: 100px;
 }
 
 .dropdown {
-  display: none;
+  display: block;
+  box-shadow: rgba(151, 151, 151, 0.15) 10px 10px 10px;
+  border-radius: 24px;
+  z-index: 100;
 }
 
-/* .link:hover p {
-  display: block;
-  background-color: white;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  color: #02c6d8;
-  align-items: center;
-  text-align: center;
-} */
-
-/* DENEME--------------- */
+/* Dropdown-filterrrrr */
 
 .form-mycount {
   display: flex;
@@ -136,6 +133,7 @@ a {
   margin-left: -200px;
   margin-top: 50px;
   background-color: white;
+  text-align: center;
 }
 
 .sepet {
@@ -387,13 +385,6 @@ a {
   color: white;
 }
 
-/* .form-filter {
-  text-align: center;
-  align-items: center ;
-  display: flex;
-  justify-content: center;
-} */
-
 .form-filter span {
   display: flex;
   justify-content: center;
@@ -434,6 +425,7 @@ a {
     gap: 0% px;
     grid-auto-flow: row;
     gap: 30px;
+    margin-inline: 30px;
 }
 
 .filter-cards {
@@ -444,6 +436,53 @@ a {
   box-shadow: rgba(151, 151, 151, 0.15) 0px 1px 5px;
   background-color: white;
   padding: 12px;
+}
+
+.filter-img {
+  width: 200px;
+}
+.filter-item {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.datafilter img {
+  width: 300px;
+}
+
+.databutton {
+  border-radius: 5px;
+  background-color:#009AA9;
+  box-shadow: 4px 4px white;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 250ms;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.databutton::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color:#02c6d8;
+  z-index: -1;
+  transition: all 400ms;
+}
+
+.databutton:hover::before {
+  height: 50px;
 }
 
 .filter-cards h2 {
@@ -472,5 +511,71 @@ a {
 .delivery-container h3{
   margin-top: 30px;
   padding-bottom: 10px;
+}
+
+/*-------------- Account------------- */
+
+
+.account-contaner {
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+.account-form {
+  margin-block: 40px;
+  width: 371px;
+  padding: 12px;
+  height: 100%;
+ text-align: center;
+}
+
+.form-basket {
+  border: 1px solid black;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.form-bnt {
+  border: 1px solid black;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-basket img:hover {
+  transform: rotate(90deg);
+  transition: transform .35s ease-out;
+  transform-origin: center center;
+  cursor: pointer;
+}
+
+.account-form img:hover {
+  transform: rotate(90deg);
+  transition: transform .35s ease-out;
+  transform-origin: center center;
+  cursor: pointer;
+}
+
+.arrowbtn {
+  width: 30px;
+}
+
+
+select {
+  width: 300px;
+  text-align: center;
+  height: 30px;
+  border: none;
+  border: 1px solid #009AA9;
+}
+
+select:not(:valid) {
+  border: 2px solid blue;
 }
 
