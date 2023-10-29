@@ -2,14 +2,10 @@ import { useState } from "react";
 import "./Header.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
-import Signup from "./SignUp/Signup";
-
-
-
 export default function CreateHeader() {
 
 
-const [mycount, setMyCount ] = useState(false)
+const [mycount, setMyCount ] = useState(false);
 
 function handleClickCount() {
     setMyCount(!mycount)
@@ -44,7 +40,15 @@ function handleClickCount() {
                         <p className="dropdown"><span> Sana özel  malzemeler</span></p></Link>
 
                        <Link to={"/filter"}><a className="link" href="#">Sana Özel
-                       <p className="dropdown">a Deneme</p>
+                       <p className="dropdown"><ul>
+                        <li>
+                            Kremler
+                            Sampuanlar
+                            Ojeler
+                            Kuru Kremler
+                            Siyah Ojeler
+                        </li>
+                        </ul></p>
                         </a></Link>
 
                        <Link className="link" to={"/filter"}> Makyaj
@@ -55,7 +59,23 @@ function handleClickCount() {
                        <p className="dropdown">a Deneme</p></Link>
 
                        <Link className="link" to={"/filter"}> Kişisel Bakım
-                       <p className="dropdown">a Deneme</p></Link>
+                       <p className="dropdown">
+                                    <ul><h3>Bakım Malzemeleri</h3>
+                                        <li><Link to={"/filter"}></Link>Kremler</li>
+                                        <li><Link to={"/filter"}></Link>Sampuanlar</li>
+                                        <li>
+                                            Ojeler
+                                        </li>
+                                        <li>
+                                            Kuru Kremler
+                                        
+                                        </li>
+                                        <li>
+                                            Siyah Ojeler
+                                        </li>
+                                    </ul>
+                                </p>
+                       </Link>
 
                        <Link className="link" to={"/filter"}> Sağlıklı Yaşam
                        <p className="dropdown">a Deneme</p></Link>

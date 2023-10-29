@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import CreateHeader from './component/Header.jsx'
-import About from './component/About/About'
 import Container from './component/Container/Container.jsx'
 import Basket from './component/Basket/Basket.jsx'
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
@@ -11,6 +10,7 @@ import Login from './component/Login/Login.jsx'
 import Filter from './component/Filter/Filter.jsx'
 import Delivery from './component/delivery/delivery.jsx'
 import Account from './component/Myaccount/account.jsx'
+import SecoundFilter from './component/Filter/SecondFilter.jsx'
 
 const router = createBrowserRouter(
   [
@@ -22,8 +22,8 @@ const router = createBrowserRouter(
           index: true, element: <Container/>,
         },
         {
-          path:"/about",
-          element: <About/>
+          path:"/filter/secoundfilter",
+          element: <SecoundFilter/>
         },
         {
           path:"/basket",

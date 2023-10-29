@@ -73,8 +73,10 @@ export default function Filter() {
             <div className="datafilter" key={x.id}>
                 <img src={x.img} />
                 <span>{x.title}</span>
-                <span>{x.price}</span>
-                <span>{x.clubprice}</span>
+               <div className="filtercards">
+               <span className="dataprice">{x.price}₺</span>
+                <span className="clubdata">Club {x.clubprice}₺</span>
+               </div>
                 <button className="databutton">Sepete ekle</button>
             </div>
         )
@@ -91,14 +93,14 @@ export default function Filter() {
                 <span className="filter-handalClick">Kişisel Bakım <img onClick={HandalClick} className="filter-arrow" src="/src/component/img/arrow.png"></img></span>
                    <div className={formFilter ? "formFilter active": "arrowBtn"}>
                         <form className="form-filter" action="">
-                            <p>asdasdas</p>
-                            <p>asdasdas</p>
+                            <p>Serümlar</p>
+                            <p>Ojeler</p>
                         </form>
                    </div>
                    <select name="Sampuan" required>
                     <option disabled>Bakım Setleri </option>
-                    <option>Kömurlu</option>
-                    <option>bakım sampuan</option>
+                    <option>Serumlar</option>
+                    <option>Bakım sampuan</option>
                    </select>
                     <div>
                         <select name="Kremler" required>

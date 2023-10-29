@@ -122,6 +122,16 @@ a {
   z-index: 100;
 }
 
+.dropdown ul  {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: baseline;
+  /* margin: auto; */
+  flex: auto;
+  padding: 25px;
+}
+
 /* Dropdown-filterrrrr */
 
 .form-mycount {
@@ -453,6 +463,20 @@ a {
   width: 300px;
 }
 
+.filtercards {
+  display:flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-block: 12px;
+}
+
+.dataprice {
+  color: #02c6d8;
+}
+
+.clubdata {
+  color: rgb(220, 34, 202);
+}
 .databutton {
   border-radius: 5px;
   background-color:#009AA9;
@@ -537,6 +561,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
  
 .form-bnt {
@@ -579,3 +604,29 @@ select:not(:valid) {
   border: 2px solid blue;
 }
 
+/* ------------acount---- */
+
+.acountMain {
+  display: none;
+  cursor: pointer;
+ 
+}
+
+.acountMain.active {
+  display: block;
+  background-color: #02c6d8;
+  transition: all 400ms;
+}
+
+.acount-sepet {
+    box-shadow: 6px 19px 31px -3px rgba(0,0,0,0.82);
+  -webkit-box-shadow: 6px 19px 31px -3px rgba(0,0,0,0.82);
+  -moz-box-shadow: 6px 19px 31px -3px rgba(0,0,0,0.82);
+  background-color: white;
+}
+
+
+.acount-title {
+  cursor: pointer;
+  background-color: #02c6d8;
+}
