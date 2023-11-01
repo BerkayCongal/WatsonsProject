@@ -39,8 +39,8 @@ function handleClickCount() {
                         <Link className="link" to={"/filter"}>Sadece Watsons’ta 
                         <p className="dropdown"><span> Sana özel  malzemeler</span></p></Link>
 
-                       <Link to={"/filter"}><a className="link" href="#">Sana Özel
-                       <p className="dropdown"><ul>
+                       <Link to={"/filter"}><p className="link" href="#">Sana Özel
+                       <div className="dropdown"><ul>
                         <li>
                             Kremler
                             Sampuanlar
@@ -48,8 +48,8 @@ function handleClickCount() {
                             Kuru Kremler
                             Siyah Ojeler
                         </li>
-                        </ul></p>
-                        </a></Link>
+                        </ul></div>
+                        </p></Link>
 
                        <Link className="link" to={"/filter"}> Makyaj
                        <p className="dropdown">a Deneme</p>
@@ -64,13 +64,7 @@ function handleClickCount() {
                                         <li><Link to={"/filter"}></Link>Kremler</li>
                                         <li><Link to={"/filter"}></Link>Sampuanlar</li>
                                         <li>
-                                            Ojeler
-                                        </li>
-                                        <li>
-                                            Kuru Kremler
-                                        
-                                        </li>
-                                        <li>
+                                            Ojeler  Kuru Kremler
                                             Siyah Ojeler
                                         </li>
                                     </ul>
@@ -100,5 +94,4 @@ function handleClickCount() {
             <Footer/>
         </>
     )
-
 }

@@ -630,3 +630,13 @@ select:not(:valid) {
   cursor: pointer;
   background-color: #02c6d8;
 }
+
+
+.secoundfilter {
+  color: black;
+  list-style: none;
+}
+
+.filter-catergory {
+  color: black;
+}
