@@ -1,15 +1,22 @@
 import { useState } from "react";
 import "./Header.css";
-import { Link, Outlet } from "react-router-dom";
+import { supabase } from "../main";
+import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
 import Footer from "./Footer/Footer";
+
 export default function CreateHeader() {
+    const navigate = useNavigate()
+    const [mycount, setMyCount ] = useState(false);
+    const data = useLoaderData();
+    const outUser = async () => {
+        const {error} = await supabase.auth.signOut()
+       !error && navigate("/")
+    }
 
+    function handleClickCount() {
+        setMyCount(!mycount)
 
-const [mycount, setMyCount ] = useState(false);
-
-function handleClickCount() {
-    setMyCount(!mycount)
-}
+    }
 
     return (
         <>
@@ -23,10 +30,19 @@ function handleClickCount() {
                      <Link to={"/basket"}><img className="basket-header" src="/src/component/img/basketnew.png" alt=""/></Link>
                     <div className={mycount ? "mycount active": "sepet"}>
                         <form className="form-mycount" action="">
-                            <Link to={"/login"}><button className="login-header">Oturumu Aç</button></Link> 
-                            <Link to={"/account"}><button className="count-header">Hesabım</button></Link>
-                            <Link to={"/account"}> <button className="myorders-header">Siparişlerim</button></Link>
-                            <Link to={"/signup"}><button className="signup-header">Kayıt</button></Link> 
+                          
+                            {data  ? (
+                                <>
+                                <Link to={"/account"}><button className="count-header">Hesabım</button></Link>
+                                <Link to={"/account"}> <button className="myorders-header">Siparişlerim</button></Link>
+                                <button  type="button" onClick={outUser}>Cıkış yap</button>
+                                </>
+                            ):(
+                               <>
+                                 <Link to={"/login"}><button className="login-header">Oturumu Aç</button></Link> 
+                                <Link to={"/signup"}><button className="signup-header">Kayıt</button></Link>
+                               </>
+                            ) }
                         </form>
                     </div>
                     
@@ -36,55 +52,49 @@ function handleClickCount() {
             <div className=" container">
             <div className="header-filter">
                     <div className="filter-top">
-                        <Link className="link" to={"/filter"}>Sadece Watsons’ta 
-                        <p className="dropdown"><span> Sana özel  malzemeler</span></p></Link>
-
-                       <Link to={"/filter"}><p className="link" href="#">Sana Özel
-                       <div className="dropdown"><ul>
-                        <li>
-                            Kremler
-                            Sampuanlar
-                            Ojeler
-                            Kuru Kremler
-                            Siyah Ojeler
-                        </li>
-                        </ul></div>
-                        </p></Link>
-
+                    <Link className="link" to={"/filter"}>Sadece Watsons’ta 
+                        <ul className="dropdown">Sana özel  malzemeler</ul>
+                        </Link>
+                       <Link className="link" to={"/filter"}> Sana Özel
+                       <ul className="dropdown">
+                        <li>Kiyafetler</li>
+                        <li>Ojeler</li>
+                        <li>Bakım setleri</li>
+                        <li>Rujlar</li>
+                       </ul>
+                       </Link>
                        <Link className="link" to={"/filter"}> Makyaj
-                       <p className="dropdown">a Deneme</p>
+                       <ul className="dropdown">
+                       <li>Allık</li>
+                       <li>Oje</li>
+                        <li>Boya</li>
+                        <li>fondeten</li>
+                        <li>kapatıcı</li>
+                        <li>kontur</li>
+                       </ul>
                        </Link>
-                       
                        <Link className="link" to={"/filter"}> Saç Bakım
-                       <p className="dropdown">a Deneme</p></Link>
-
-                       <Link className="link" to={"/filter"}> Kişisel Bakım
-                       <p className="dropdown">
-                                    <ul><h3>Bakım Malzemeleri</h3>
-                                        <li><Link to={"/filter"}></Link>Kremler</li>
-                                        <li><Link to={"/filter"}></Link>Sampuanlar</li>
-                                        <li>
-                                            Ojeler  Kuru Kremler
-                                            Siyah Ojeler
-                                        </li>
-                                    </ul>
-                                </p>
-                       </Link>
-
+                       <ul className="dropdown">a Deneme</ul></Link>
                        <Link className="link" to={"/filter"}> Sağlıklı Yaşam
-                       <p className="dropdown">a Deneme</p></Link>
+                       <ul className="dropdown">
+                        <li>Alışverişi</li>
+                        <li>ara</li>
+                        <li>asdasd</li>
+                        <li>kiyafet</li>
+
+                        </ul></Link>
 
                        <Link className="link" to={"/filter"}> Erkek Bakım
-                       <p className="dropdown">a Deneme</p></Link>
+                       <ul className="dropdown">a Deneme</ul></Link>
 
                        <Link className="link" to={"/filter"}> Parfüm
-                       <p className="dropdown">a Deneme</p></Link>
+                       <ul className="dropdown">a Deneme</ul></Link>
 
                        <Link className="link" to={"/filter"}>Aksesuar K-Beauty 
-                       <p className="dropdown">a Deneme</p></Link>
+                       <ul className="dropdown">a Deneme</ul></Link>
 
                        <Link className="link" to={"/filter"}>Sürdürülebilir Yaşam
-                       <p className="dropdown">a Deneme</p></Link>
+                       <ul className="dropdown">a Deneme</ul></Link>
 
                         {/* Tekrara dön bak buraya arastır....! */}
                     </div>

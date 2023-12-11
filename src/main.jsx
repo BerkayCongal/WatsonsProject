@@ -11,12 +11,15 @@ import Filter from './component/Filter/Filter.jsx'
 import Delivery from './component/delivery/delivery.jsx'
 import Account from './component/Myaccount/account.jsx'
 import SecoundFilter from './component/Filter/SecondFilter.jsx'
-
+import { createClient } from '@supabase/supabase-js'
+import { auth, isSign } from './auth.js'
+export  const supabase = createClient("https://yvwzfokjdgcyvyikzzen.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl2d3pmb2tqZGdjeXZ5aWt6emVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwMDkxODk5OSwiZXhwIjoyMDE2NDk0OTk5fQ.0E4nVMsEougVoDWcHppePn7ehMZPv6WgMA4pVmobZd4")
 const router = createBrowserRouter(
   [
     {
       path: "/",
       element:  <CreateHeader/>,
+      loader: isSign,
       children: [
         {
           index: true, element: <Container/>,
@@ -31,11 +34,13 @@ const router = createBrowserRouter(
         },
         {
           path:"/signup",
-          element:<Signup/>
+          element:<Signup/>,
+          loader: auth
         },
         {
           path:"/login",
-          element:<Login/>
+          element:<Login/>,
+          loader: auth
         },
         {
           path:"/filter",
@@ -54,9 +59,6 @@ const router = createBrowserRouter(
   ]
 )
 
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
 <RouterProvider router={router}/>
-
 )

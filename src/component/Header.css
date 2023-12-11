@@ -84,7 +84,7 @@ a {
 }
 
 
-.filter-top p{
+.filter-top ul{
   position: absolute;
   color: black;
   top: 163px;
@@ -92,6 +92,10 @@ a {
   width: 1200px;
   height: 400px;
   display: none;
+}
+.container {
+  list-style: none;
+  text-decoration: none;
 }
 
 .filter-top a:hover {
@@ -105,6 +109,12 @@ a {
   text-align: center;
 }
 
+.link {
+  color: white;
+  /* text-decoration: none; */
+  list-style: none;
+}
+
 .link:hover .dropdown {
   display: block;
   transition: all 100ms;
@@ -116,21 +126,24 @@ a {
 }
 
 .dropdown {
-  display: block;
+  display: none;
   box-shadow: rgba(151, 151, 151, 0.15) 10px 10px 10px;
   border-radius: 24px;
   z-index: 100;
 }
 
-.dropdown ul  {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: baseline;
-  /* margin: auto; */
-  flex: auto;
-  padding: 25px;
+
+.dropdown ul:hover {
+  display: block;
 }
+
+.basket-header {
+  min-width: 29px;
+  margin-right: 30px;
+  cursor: pointer;
+  height: 33px;
+}
+
 
 /* Dropdown-filterrrrr */
 
@@ -452,6 +465,7 @@ a {
   width: 200px;
 }
 .filter-item {
+  list-style: none;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -522,7 +536,6 @@ a {
 .delivery {
   width: 1200px;
   margin: auto;
-
 }
 
 .delivery-container h2 {
@@ -639,4 +652,11 @@ select:not(:valid) {
 
 .filter-catergory {
   color: black;
+}
+
+.dropdown  {
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  padding: 13px;
 }

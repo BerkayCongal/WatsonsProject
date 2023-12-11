@@ -77,9 +77,6 @@ export default function Filter() {
         },
     ]
 
-    
-
-  
     let filter = filterdata.filter(x=> {
         if(category === "all") return x
         return x.category === category 
@@ -99,7 +96,7 @@ export default function Filter() {
         )
     }) 
 
-    
+    console.log(filter);
 
     const oneCategories = []
     filterdata.forEach(data => {
@@ -107,8 +104,8 @@ export default function Filter() {
         oneCategories.push(data.category)
     })
     
-    const renderCategory = oneCategories.map(x => {
-        return <li key={x} onClick={changeCategories}>{x}</li>
+    const renderCategory = oneCategories.map((x,i) => {
+        return <li key={i} onClick={changeCategories}>{x}</li>
        
       })
 
@@ -128,34 +125,16 @@ export default function Filter() {
                 <span className="filter-handalClick">Kişisel Bakım <img onClick={HandalClick} className="filter-arrow" src="/src/component/img/arrow.png"></img></span>
                    <div className={formFilter ? "formFilter active": "arrowBtn"}>
                         <form className="form-filter" action="">
-                         <div className="secoundfilter">{renderCategory}</div>
-                            
+                         <div className="secoundfilter" >{renderCategory}</div>
                         </form>
                    </div>
-                   <select name="Sampuan" required>
-                    <option disabled>Bakım Setleri </option>
-                    <option>Serumlar</option>
-                    <option>Bakım sampuan</option>
-                   </select>
-                    <div>
-                        <select name="Kremler" required>
-                        <option disabled>Kremler </option>
-                        <option>Normal</option>
-                        <option>Kuru</option>
-                        
-                    </select>
-                    </div>
-                   
                 </div>
                 <div className="filter-cards">
-                    <p className="filter-item">{filter}</p>
-                   
-    
+                    <div className="filter-item">{filter}</div>
+
                 </div>
             </div>
 
         </>
-
-        
     )
 }

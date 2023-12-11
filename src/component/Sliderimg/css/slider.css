@@ -5,29 +5,22 @@
 }
 
 
-
 .slider-container {
     max-width: max-content;
     margin: auto;
-    
 }
 
 .slider-main {
     overflow-x: hidden;
     display:flex;
- 
     max-width: 1440px;
-
-
 }
-
 
 .slider-main img {
     border-radius: 12px;
    min-width: 1440px;
    transition: transform 0.5s ease-in-out;
 }
-
 
 .span {
     background-color:white;
@@ -38,4 +31,11 @@
     background-color: #009AA9;
     border-radius: 12px;
     color: white;
+}
+
+.dropdown li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }

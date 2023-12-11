@@ -10,29 +10,13 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 export default function Basket () {
     const nameRef = useRef()
-    
-    const items = [
-        {
-            label: 'Ürün Paketleniyor',
-        },
-        {
-            label: 'Kargoya verildi'
-        },
-        {
-            label: 'Teslim edildi.'
-        },
-        
-    ];
     return(
         <>
             <div className="card">
-             <Steps model={items} />
-             
             </div>
-            
            <div className='control-nav'>
            <div className='container-link'>
-           <Link to={"/"}><p lassName='control-link'>
+           <Link to={"/"}><p className='control-link'>
             <Player 
                     autoplay
                     loop

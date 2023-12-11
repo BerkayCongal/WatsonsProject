@@ -1,6 +1,37 @@
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+import {useState} from "react"
 import Advertising from "../Advertising/Advertising";
+import { supabase } from "../../main";
+
 export default function Login() {
+    const isLogin = location.pathname === "/signup"
+        const navigate = useNavigate()
+    const [showPassword, setShotPassword] = useState(false)
+    const [password, setPassword] = useState("");
+        
+   async function handleSubmit(e) {
+        e.preventDefault()
+        const form = e.target
+        const formData = Object.fromEntries(new FormData(form))
+        console.log(formData);
+     
+       
+    
+        const { data, error } = await supabase.auth.signInWithPassword({
+            email: formData.email,
+            password: formData.password,
+        })
+        if(!error) {
+            console.log(data);
+            navigate("/")
+        }
+
+    }
+
+    const handleChange =(e) => {
+     setPassword(e.target.value)
+    }
+
     return(
         <>
             <Advertising/>
@@ -8,11 +39,11 @@ export default function Login() {
                 <div className="container-login">
                     <h2>OTURUM AÇ</h2>
                     <p>Kisişel Hesabınızda oturum açın</p>
-                    <form className="loginform">
+                    <form onSubmit={handleSubmit} className="loginform">
                         <input type="text" name="email"  placeholder="E-posta" />
-                        <input type="password" name="password" placeholder="Şifre"/>
+                        <input type="password" name="password" placeholder="Şifre" onChange={handleChange}/>
                         <button> Oturumu aç</button>
-                        <Link to={"/signup"}><button className="login-sign">Üye Ol</button></Link>
+                        <button className="login-sign">Üye Ol</button>
                     </form>
                 </div>
            </div>
