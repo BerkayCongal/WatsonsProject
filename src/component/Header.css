@@ -189,15 +189,35 @@ a {
 .count-header {
   border: none;
   background-color: white;
-  border-bottom: 1px solid rgb(122, 122, 122);
   width: 100%;
+}
+
+.count-header:hover {
+  background-color: rgb(240, 240, 240);
+} 
+
+
+
+.headerOut {
+  background-color: #009AA9;
+  color: white;
+  border: none;
+}
+
+.headerOut:hover {
+  background-color: #02c6d8;
 }
 
 .myorders-header {
   border: none;
   background-color: white;
- 
+  width: 100%;
 }
+
+.myorders-header:hover {
+  background-color: rgb(240, 240, 240);
+}
+
 .signup-header {
   color: white;
   border: none;
@@ -608,7 +628,7 @@ a {
 select {
   width: 300px;
   text-align: center;
-  height: 30px;
+  height: 66px;
   border: none;
   border: 1px solid #009AA9;
 }

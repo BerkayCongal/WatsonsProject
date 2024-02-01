@@ -23,6 +23,7 @@ export default function Signup () {
             data:{
                 username:name,
                 number,
+                email,
             }
          }
         })
@@ -30,6 +31,9 @@ export default function Signup () {
             navgate("/login")
         }
         console.log(error,data);
+
+
+        console.log(data);
 
     }
     

@@ -17,7 +17,7 @@ export default function Container() {
                     <h4><img src="/src/component/Container/img/magazalar.png" alt="" />Mağazalar</h4>
                     <h4> <img src="/src/component/Container/img/katalog.png" alt="" />Katalog</h4>
                     <Link to={"/delivery"}><h4><img src="/src/component/Container/img/teslimat-ve-deme.png" alt="" />Teslimat/Ödeme</h4></Link>
-                    <h4> <img src="/src/component/Container/img/top-blog.avif" alt="" />Blog</h4>
+                    {/* <h4> <img src="/src/component/Container/img/top-blog.avif" alt="" />Blog</h4> */}
                 </div>
                 <div className="headerlog">
                     <img src="/src/component/Container/img/Pure-beuaty-.png" alt="" />

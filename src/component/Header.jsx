@@ -35,7 +35,7 @@ export default function CreateHeader() {
                                 <>
                                 <Link to={"/account"}><button className="count-header">Hesabım</button></Link>
                                 <Link to={"/account"}> <button className="myorders-header">Siparişlerim</button></Link>
-                                <button  type="button" onClick={outUser}>Cıkış yap</button>
+                                <button className="headerOut"  type="button" onClick={outUser}>Cıkış yap</button>
                                 </>
                             ):(
                                <>
